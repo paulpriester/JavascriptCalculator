@@ -1,20 +1,32 @@
+var num1;
+var num2;
+var res;
+var results;
+
+document.addEventListener("DOMContentLoaded", function(){
+	num1 = document.getElementById("num1");
+	num2 = document.getElementById("num2");
+	res = document.getElementById("results");
+
+});
+
 function add(){
-	//console.log("let's add");
-	var math= (7+5);
-	console.log(math);
+	results= +num1.value + +num2.value;
+	res.value= results;
 }
 
 function subtract(){
-	//console.log("let's subtract");
-	console.log(9-3);
+	results= +num1.value - +num2.value;
+	res.value= results;
 }
 
 function multiply(){
-	//console.log("let's multiply");
-	console.log(4*5);
+	results= +num1.value * +num2.value;
+	res.value= results;
 }
 
 function divide(){
-	//console.log("let's divide");
-	console.log(30/5);
+	results= +num1.value / +num2.value;
+	res.value= results;
 }
+
