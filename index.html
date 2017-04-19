@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="my-app">
 	<head>
 		<title>My Javascript calculator</title>
-		<script src="index.js"></script>
+		<!-- <script src="index.js"></script> -->
+		<script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"> </script>
+		<script src= "indexx.js"></script>
 	</head>
-	<body>
-		<input type="number" id="num1" />
-		<input type="number" id="num2" />
+	<body ng-controller="mainCtrl">
+		<input type="number" ng-model="numbers.num1" />
+		<input type="number" ng-model="numbers.num2" />
 
-		<button onclick="add()">Add</button>
-		<button onclick="subtract()">Subtract</button>
-		<button onclick="multiply()">Multiply</button>
-		<button onclick="divide()">Divide</button>
+		<button ng-click="add();">Add</button>
+		<button ng-click="subtract();">Subtract</button>
+		<button ng-click="multiply();">Multiply</button>
+		<button ng-click="divide();">Divide</button>
 
-		<input type="number" id="results"/>
-
+		<p>{{results}}</p>
 	</body>
 </html>
